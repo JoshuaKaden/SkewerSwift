@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		934254291E204DFE00EC9C5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934254281E204DFE00EC9C5D /* AppDelegate.swift */; };
+		9342542B1E204DFE00EC9C5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342542A1E204DFE00EC9C5D /* ViewController.swift */; };
+		9342542E1E204DFE00EC9C5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9342542C1E204DFE00EC9C5D /* Main.storyboard */; };
+		934254301E204DFE00EC9C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9342542F1E204DFE00EC9C5D /* Assets.xcassets */; };
+		934254331E204DFE00EC9C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934254311E204DFE00EC9C5D /* LaunchScreen.storyboard */; };
+		9342543E1E204DFE00EC9C5D /* SkewerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342543D1E204DFE00EC9C5D /* SkewerSwiftTests.swift */; };
+		934254491E204DFE00EC9C5D /* SkewerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934254481E204DFE00EC9C5D /* SkewerSwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9342543A1E204DFE00EC9C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9342541D1E204DFE00EC9C5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 934254241E204DFE00EC9C5D;
+			remoteInfo = SkewerSwift;
+		};
+		934254451E204DFE00EC9C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9342541D1E204DFE00EC9C5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 934254241E204DFE00EC9C5D;
+			remoteInfo = SkewerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		934254251E204DFE00EC9C5D /* SkewerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkewerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		934254281E204DFE00EC9C5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9342542A1E204DFE00EC9C5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9342542D1E204DFE00EC9C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9342542F1E204DFE00EC9C5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		934254321E204DFE00EC9C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		934254341E204DFE00EC9C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934254391E204DFE00EC9C5D /* SkewerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkewerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9342543D1E204DFE00EC9C5D /* SkewerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkewerSwiftTests.swift; sourceTree = "<group>"; };
+		9342543F1E204DFE00EC9C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934254441E204DFE00EC9C5D /* SkewerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkewerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		934254481E204DFE00EC9C5D /* SkewerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkewerSwiftUITests.swift; sourceTree = "<group>"; };
+		9342544A1E204DFE00EC9C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		934254221E204DFE00EC9C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934254361E204DFE00EC9C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934254411E204DFE00EC9C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9342541C1E204DFE00EC9C5D = {
+			isa = PBXGroup;
+			children = (
+				934254271E204DFE00EC9C5D /* SkewerSwift */,
+				9342543C1E204DFE00EC9C5D /* SkewerSwiftTests */,
+				934254471E204DFE00EC9C5D /* SkewerSwiftUITests */,
+				934254261E204DFE00EC9C5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		934254261E204DFE00EC9C5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				934254251E204DFE00EC9C5D /* SkewerSwift.app */,
+				934254391E204DFE00EC9C5D /* SkewerSwiftTests.xctest */,
+				934254441E204DFE00EC9C5D /* SkewerSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		934254271E204DFE00EC9C5D /* SkewerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				934254281E204DFE00EC9C5D /* AppDelegate.swift */,
+				9342542A1E204DFE00EC9C5D /* ViewController.swift */,
+				9342542C1E204DFE00EC9C5D /* Main.storyboard */,
+				9342542F1E204DFE00EC9C5D /* Assets.xcassets */,
+				934254311E204DFE00EC9C5D /* LaunchScreen.storyboard */,
+				934254341E204DFE00EC9C5D /* Info.plist */,
+			);
+			path = SkewerSwift;
+			sourceTree = "<group>";
+		};
+		9342543C1E204DFE00EC9C5D /* SkewerSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				9342543D1E204DFE00EC9C5D /* SkewerSwiftTests.swift */,
+				9342543F1E204DFE00EC9C5D /* Info.plist */,
+			);
+			path = SkewerSwiftTests;
+			sourceTree = "<group>";
+		};
+		934254471E204DFE00EC9C5D /* SkewerSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				934254481E204DFE00EC9C5D /* SkewerSwiftUITests.swift */,
+				9342544A1E204DFE00EC9C5D /* Info.plist */,
+			);
+			path = SkewerSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		934254241E204DFE00EC9C5D /* SkewerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9342544D1E204DFE00EC9C5D /* Build configuration list for PBXNativeTarget "SkewerSwift" */;
+			buildPhases = (
+				934254211E204DFE00EC9C5D /* Sources */,
+				934254221E204DFE00EC9C5D /* Frameworks */,
+				934254231E204DFE00EC9C5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkewerSwift;
+			productName = SkewerSwift;
+			productReference = 934254251E204DFE00EC9C5D /* SkewerSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		934254381E204DFE00EC9C5D /* SkewerSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934254501E204DFE00EC9C5D /* Build configuration list for PBXNativeTarget "SkewerSwiftTests" */;
+			buildPhases = (
+				934254351E204DFE00EC9C5D /* Sources */,
+				934254361E204DFE00EC9C5D /* Frameworks */,
+				934254371E204DFE00EC9C5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9342543B1E204DFE00EC9C5D /* PBXTargetDependency */,
+			);
+			name = SkewerSwiftTests;
+			productName = SkewerSwiftTests;
+			productReference = 934254391E204DFE00EC9C5D /* SkewerSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		934254431E204DFE00EC9C5D /* SkewerSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934254531E204DFE00EC9C5D /* Build configuration list for PBXNativeTarget "SkewerSwiftUITests" */;
+			buildPhases = (
+				934254401E204DFE00EC9C5D /* Sources */,
+				934254411E204DFE00EC9C5D /* Frameworks */,
+				934254421E204DFE00EC9C5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				934254461E204DFE00EC9C5D /* PBXTargetDependency */,
+			);
+			name = SkewerSwiftUITests;
+			productName = SkewerSwiftUITests;
+			productReference = 934254441E204DFE00EC9C5D /* SkewerSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9342541D1E204DFE00EC9C5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kaden, Joshua";
+				TargetAttributes = {
+					934254241E204DFE00EC9C5D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E5LW2CH45C;
+						ProvisioningStyle = Automatic;
+					};
+					934254381E204DFE00EC9C5D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E5LW2CH45C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 934254241E204DFE00EC9C5D;
+					};
+					934254431E204DFE00EC9C5D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E5LW2CH45C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 934254241E204DFE00EC9C5D;
+					};
+				};
+			};
+			buildConfigurationList = 934254201E204DFE00EC9C5D /* Build configuration list for PBXProject "SkewerSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9342541C1E204DFE00EC9C5D;
+			productRefGroup = 934254261E204DFE00EC9C5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				934254241E204DFE00EC9C5D /* SkewerSwift */,
+				934254381E204DFE00EC9C5D /* SkewerSwiftTests */,
+				934254431E204DFE00EC9C5D /* SkewerSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		934254231E204DFE00EC9C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934254331E204DFE00EC9C5D /* LaunchScreen.storyboard in Resources */,
+				934254301E204DFE00EC9C5D /* Assets.xcassets in Resources */,
+				9342542E1E204DFE00EC9C5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934254371E204DFE00EC9C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934254421E204DFE00EC9C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		934254211E204DFE00EC9C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9342542B1E204DFE00EC9C5D /* ViewController.swift in Sources */,
+				934254291E204DFE00EC9C5D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934254351E204DFE00EC9C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9342543E1E204DFE00EC9C5D /* SkewerSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934254401E204DFE00EC9C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934254491E204DFE00EC9C5D /* SkewerSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9342543B1E204DFE00EC9C5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 934254241E204DFE00EC9C5D /* SkewerSwift */;
+			targetProxy = 9342543A1E204DFE00EC9C5D /* PBXContainerItemProxy */;
+		};
+		934254461E204DFE00EC9C5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 934254241E204DFE00EC9C5D /* SkewerSwift */;
+			targetProxy = 934254451E204DFE00EC9C5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9342542C1E204DFE00EC9C5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9342542D1E204DFE00EC9C5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		934254311E204DFE00EC9C5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934254321E204DFE00EC9C5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9342544B1E204DFE00EC9C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9342544C1E204DFE00EC9C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9342544E1E204DFE00EC9C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E5LW2CH45C;
+				INFOPLIST_FILE = SkewerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9342544F1E204DFE00EC9C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E5LW2CH45C;
+				INFOPLIST_FILE = SkewerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		934254511E204DFE00EC9C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E5LW2CH45C;
+				INFOPLIST_FILE = SkewerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkewerSwift.app/SkewerSwift";
+			};
+			name = Debug;
+		};
+		934254521E204DFE00EC9C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E5LW2CH45C;
+				INFOPLIST_FILE = SkewerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkewerSwift.app/SkewerSwift";
+			};
+			name = Release;
+		};
+		934254541E204DFE00EC9C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = E5LW2CH45C;
+				INFOPLIST_FILE = SkewerSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SkewerSwift;
+			};
+			name = Debug;
+		};
+		934254551E204DFE00EC9C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = E5LW2CH45C;
+				INFOPLIST_FILE = SkewerSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SkewerSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		934254201E204DFE00EC9C5D /* Build configuration list for PBXProject "SkewerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9342544B1E204DFE00EC9C5D /* Debug */,
+				9342544C1E204DFE00EC9C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9342544D1E204DFE00EC9C5D /* Build configuration list for PBXNativeTarget "SkewerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9342544E1E204DFE00EC9C5D /* Debug */,
+				9342544F1E204DFE00EC9C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		934254501E204DFE00EC9C5D /* Build configuration list for PBXNativeTarget "SkewerSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934254511E204DFE00EC9C5D /* Debug */,
+				934254521E204DFE00EC9C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		934254531E204DFE00EC9C5D /* Build configuration list for PBXNativeTarget "SkewerSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934254541E204DFE00EC9C5D /* Debug */,
+				934254551E204DFE00EC9C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9342541D1E204DFE00EC9C5D /* Project object */;
+}
