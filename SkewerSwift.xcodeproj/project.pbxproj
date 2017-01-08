@@ -205,7 +205,7 @@
 				TargetAttributes = {
 					934254241E204DFE00EC9C5D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = E5LW2CH45C;
+						DevelopmentTeam = NF2C9YRD83;
 						ProvisioningStyle = Automatic;
 					};
 					934254381E204DFE00EC9C5D = {
@@ -431,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E5LW2CH45C;
+				DEVELOPMENT_TEAM = NF2C9YRD83;
 				INFOPLIST_FILE = SkewerSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwift;
@@ -444,7 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E5LW2CH45C;
+				DEVELOPMENT_TEAM = NF2C9YRD83;
 				INFOPLIST_FILE = SkewerSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwift;
@@ -530,6 +530,7 @@
 				9342544F1E204DFE00EC9C5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		934254501E204DFE00EC9C5D /* Build configuration list for PBXNativeTarget "SkewerSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +539,7 @@
 				934254521E204DFE00EC9C5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		934254531E204DFE00EC9C5D /* Build configuration list for PBXNativeTarget "SkewerSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +548,7 @@
 				934254551E204DFE00EC9C5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

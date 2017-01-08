@@ -10,10 +10,41 @@ import UIKit
 
 final class SkewerView: UIView {
     
+    // MARK: - Defaults
+    let defaultAnchorX = CGFloat(0.5)
+    let defaultAngle = CGFloat(0)
+    var defaultPosition: CGFloat {
+        return guideView.frame.midX
+    }
+    
     // MARK: - Public Properties
-    var anchorX: CGFloat = 0.5
-    var angle: CGFloat = 0
-    var position: CGFloat = 0
+    var anchorX: CGFloat {
+        get { return CGFloat(anchorXSlider.value) }
+        set {
+            anchorXSlider.value = Float(newValue)
+            didChangeAnchorX(anchorXSlider)
+        }
+    }
+    var angle: CGFloat {
+        get { return CGFloat(angleSlider.value) }
+        set {
+            angleSlider.value = Float(newValue)
+            didChangeAngle(angleSlider)
+        }
+    }
+    var position: CGFloat {
+        get { return CGFloat(positionSlider.value) }
+        set {
+            positionSlider.value = Float(newValue)
+            didChangePosition(positionSlider)
+        }
+    }
+    
+    // MARK: - Private Properties
+    
+    private var positionMaxValue: Float {
+        return Float(guideView.width + (guideView.width / 2.0))
+    }
     
     // MARK: - Subviews
     private let containerView = UIView()
@@ -36,9 +67,11 @@ final class SkewerView: UIView {
         super.willMove(toWindow: newWindow)
         guard let _ = newWindow else { return }
         
-        backgroundColor = UIColor.darkGray
+        backgroundColor = UIColor.lightGray
         
         setupSubviews()
+        
+        reset()
     }
     
     private func setupSubviews() {
@@ -50,7 +83,9 @@ final class SkewerView: UIView {
         redView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
         containerView.addSubview(redView)
         
-        redLabel.font = UIFont.systemFont(ofSize: 70)
+        redLabel.adjustsFontSizeToFitWidth = true
+        redLabel.minimumScaleFactor = 0.1
+        redLabel.font = UIFont.systemFont(ofSize: 200)
         redLabel.text = "abc"
         redLabel.textAlignment = .center
         redView.addSubview(redLabel)
@@ -63,7 +98,6 @@ final class SkewerView: UIView {
         anchorXSlider.addTarget(self, action: #selector(didChangeAnchorX(_:)), for: .valueChanged)
         anchorXSlider.maximumValue = 1.5
         anchorXSlider.minimumValue = -0.5
-        anchorXSlider.value = Float(anchorX)
         sliderContainerView.addSubview(anchorXSlider)
         
         angleLabel.text = buildAngleLabelText()
@@ -72,7 +106,6 @@ final class SkewerView: UIView {
         angleSlider.addTarget(self, action: #selector(didChangeAngle(_:)), for: .valueChanged)
         angleSlider.maximumValue = 360
         angleSlider.minimumValue = -180
-        angleSlider.value = Float(angle)
         sliderContainerView.addSubview(angleSlider)
         
         positionLabel.text = buildPositionLabelText()
@@ -107,34 +140,41 @@ final class SkewerView: UIView {
         layer.transform = transform
     }
     
+    private func updatePositionSlider() {
+        positionSlider.maximumValue = positionMaxValue
+        positionSlider.minimumValue = Float((positionMaxValue / 2.0) * -1.0)
+        position = defaultPosition
+    }
+    
     private func updatePositionSliderIfNeeded() {
-        let maxValue = Float(guideView.width + (guideView.width / 2.0))
-        if positionSlider.maximumValue != maxValue {
-            positionSlider.maximumValue = maxValue
-            positionSlider.minimumValue = Float((guideView.width / 2.0) * -1.0)
-            position = containerView.frame.midX
-            positionSlider.value = Float(position)
+        if positionSlider.maximumValue != positionMaxValue {
+            updatePositionSlider()
         }
+    }
+    
+    // MARK: - Public Methods
+    
+    func reset() {
+        anchorX = defaultAnchorX
+        angle = defaultAngle
+        updatePositionSlider()
     }
     
     // MARK: - Actions
     
     func didChangeAnchorX(_ sender: UISlider) {
-        anchorX = CGFloat(sender.value)
         anchorXLabel.text = buildAnchorLabelText()
         anchorXLabel.sizeToFit()
         fold()
     }
     
     func didChangeAngle(_ sender: UISlider) {
-        angle = CGFloat(sender.value)
         angleLabel.text = buildAngleLabelText()
         angleLabel.sizeToFit()
         fold()
     }
     
     func didChangePosition(_ sender: UISlider) {
-        position = CGFloat(sender.value)
         positionLabel.text = buildPositionLabelText()
         positionLabel.sizeToFit()
         fold()
@@ -145,8 +185,11 @@ final class SkewerView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        containerView.frame = bounds.insetBy(dx: 24, dy: 24)
+        containerView.frame = bounds.insetBy(dx: width * 0.1, dy: height * 0.1)
         containerView.centerInSuperview()
+
+        let marginX = width * 0.025
+        let marginY = height * 0.025
         
         let guideSide: CGFloat
         let isPortrait: Bool
@@ -167,12 +210,12 @@ final class SkewerView: UIView {
         redLabel.centerInSuperview()
         
         if isPortrait {
-            sliderContainerView.size = CGSize(width: containerView.width, height: containerView.height - guideView.maxY - 16)
+            sliderContainerView.size = CGSize(width: containerView.width, height: containerView.height - guideView.maxY - marginY)
             sliderContainerView.x = 0
-            sliderContainerView.y = guideView.maxY + 16
+            sliderContainerView.y = guideView.maxY + marginY
         } else {
-            sliderContainerView.size = CGSize(width: containerView.width - guideView.maxX - 16, height: containerView.height)
-            sliderContainerView.x = guideView.maxX + 16
+            sliderContainerView.size = CGSize(width: containerView.width - guideView.maxX - marginX, height: containerView.height)
+            sliderContainerView.x = guideView.maxX + marginX
             sliderContainerView.y = 0
         }
         
@@ -185,13 +228,13 @@ final class SkewerView: UIView {
         angleSlider.origin = CGPoint(x: 0, y: angleLabel.maxY)
         
         anchorXLabel.sizeToFit()
-        anchorXLabel.origin = CGPoint(x: 0, y: angleSlider.maxY + 8)
+        anchorXLabel.origin = CGPoint(x: 0, y: angleSlider.maxY + marginY)
         
         anchorXSlider.size = sliderSize
         anchorXSlider.origin = CGPoint(x: 0, y: anchorXLabel.maxY)
         
         positionLabel.sizeToFit()
-        positionLabel.origin = CGPoint(x: 0, y: anchorXSlider.maxY + 8)
+        positionLabel.origin = CGPoint(x: 0, y: anchorXSlider.maxY + marginY)
         
         positionSlider.size = sliderSize
         positionSlider.origin = CGPoint(x: 0, y: positionLabel.maxY)
