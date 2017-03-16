@@ -205,7 +205,7 @@
 				TargetAttributes = {
 					934254241E204DFE00EC9C5D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = NF2C9YRD83;
+						DevelopmentTeam = FP6GFC3W94;
 						ProvisioningStyle = Automatic;
 					};
 					934254381E204DFE00EC9C5D = {
@@ -431,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NF2C9YRD83;
+				DEVELOPMENT_TEAM = FP6GFC3W94;
 				INFOPLIST_FILE = SkewerSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwift;
@@ -444,7 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NF2C9YRD83;
+				DEVELOPMENT_TEAM = FP6GFC3W94;
 				INFOPLIST_FILE = SkewerSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoshua.SkewerSwift;
