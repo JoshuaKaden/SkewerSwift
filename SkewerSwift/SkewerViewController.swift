@@ -21,6 +21,8 @@ final class SkewerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = NSLocalizedString("Skewer", comment: "")
+        
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didDoubleTap(_:)))
         gesture.numberOfTapsRequired = 2
         view.addGestureRecognizer(gesture)
