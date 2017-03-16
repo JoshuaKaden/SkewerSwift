@@ -85,7 +85,7 @@ final class SkewerView: UIView {
         
         redLabel.adjustsFontSizeToFitWidth = true
         redLabel.minimumScaleFactor = 0.1
-        redLabel.font = UIFont.systemFont(ofSize: 200)
+        redLabel.font = UIFont.systemFont(ofSize: 140)
         redLabel.text = "abc"
         redLabel.textAlignment = .center
         redView.addSubview(redLabel)
@@ -185,7 +185,8 @@ final class SkewerView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        containerView.frame = bounds.insetBy(dx: width * 0.1, dy: height * 0.1)
+        containerView.frame = bounds.insetBy(dx: 24, dy: 24)
+        containerView.height -= 100
         containerView.centerInSuperview()
 
         let marginX = width * 0.025
