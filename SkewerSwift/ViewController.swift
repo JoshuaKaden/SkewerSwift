@@ -14,6 +14,7 @@ final class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         let vc = SkewerViewController()
-        present(vc, animated: true) {}
+        let navC = UINavigationController(rootViewController: vc)
+        present(navC, animated: true) {}
     }
 }
