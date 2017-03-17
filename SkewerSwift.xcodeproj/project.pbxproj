@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931B896E1E7C6507008432C7 /* UIViewController+Parenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B896D1E7C6507008432C7 /* UIViewController+Parenting.swift */; };
+		931B89701E7C6526008432C7 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B896F1E7C6526008432C7 /* RedView.swift */; };
+		931B89721E7C6534008432C7 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931B89711E7C6534008432C7 /* RedViewController.swift */; };
 		934254291E204DFE00EC9C5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934254281E204DFE00EC9C5D /* AppDelegate.swift */; };
 		9342542B1E204DFE00EC9C5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342542A1E204DFE00EC9C5D /* ViewController.swift */; };
 		9342542E1E204DFE00EC9C5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9342542C1E204DFE00EC9C5D /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		931B896D1E7C6507008432C7 /* UIViewController+Parenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Parenting.swift"; sourceTree = "<group>"; };
+		931B896F1E7C6526008432C7 /* RedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+		931B89711E7C6534008432C7 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		934254251E204DFE00EC9C5D /* SkewerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkewerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934254281E204DFE00EC9C5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9342542A1E204DFE00EC9C5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,10 +116,13 @@
 				934254341E204DFE00EC9C5D /* Info.plist */,
 				934254311E204DFE00EC9C5D /* LaunchScreen.storyboard */,
 				9342542C1E204DFE00EC9C5D /* Main.storyboard */,
+				931B896F1E7C6526008432C7 /* RedView.swift */,
+				931B89711E7C6534008432C7 /* RedViewController.swift */,
 				934254581E204E5E00EC9C5D /* SkewerView.swift */,
 				934254561E204E4200EC9C5D /* SkewerViewController.swift */,
 				9342545A1E204F5600EC9C5D /* UIView+Layer.swift */,
 				9342545B1E204F5600EC9C5D /* UIView+Layout.swift */,
+				931B896D1E7C6507008432C7 /* UIViewController+Parenting.swift */,
 				9342542A1E204DFE00EC9C5D /* ViewController.swift */,
 			);
 			path = SkewerSwift;
@@ -275,10 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9342542B1E204DFE00EC9C5D /* ViewController.swift in Sources */,
+				931B89721E7C6534008432C7 /* RedViewController.swift in Sources */,
+				931B896E1E7C6507008432C7 /* UIViewController+Parenting.swift in Sources */,
 				934254571E204E4200EC9C5D /* SkewerViewController.swift in Sources */,
 				9342545D1E204F5600EC9C5D /* UIView+Layout.swift in Sources */,
 				934254291E204DFE00EC9C5D /* AppDelegate.swift in Sources */,
 				934254591E204E5E00EC9C5D /* SkewerView.swift in Sources */,
+				931B89701E7C6526008432C7 /* RedView.swift in Sources */,
 				9342545C1E204F5600EC9C5D /* UIView+Layer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

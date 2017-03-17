@@ -10,6 +10,8 @@ import UIKit
 
 final class SkewerViewController: UIViewController {
 
+    private let redViewController = RedViewController()
+    
     var skewerView: SkewerView {
         return view as! SkewerView
     }
@@ -21,11 +23,18 @@ final class SkewerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = NSLocalizedString("Skewer", comment: "")
+        title = NSLocalizedString("Sam is Great", comment: "")
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didDoubleTap(_:)))
         gesture.numberOfTapsRequired = 2
         view.addGestureRecognizer(gesture)
+        
+        adoptChildViewController(redViewController, targetView: skewerView.containerView)
+        skewerView.redView = redViewController.view as? RedView ?? nil
+    }
+    
+    deinit {
+        redViewController.leaveParentViewController()
     }
     
     func didDoubleTap(_ sender: UIGestureRecognizer) {
