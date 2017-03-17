@@ -25,7 +25,7 @@ final class RedView: UIView {
         guideView.cornerRadius = 10
         addSubview(guideView)
         
-        redView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+        redView.backgroundColor = UIColor.green.withAlphaComponent(0.5)
         redView.cornerRadius = guideView.cornerRadius
         addSubview(redView)
         
